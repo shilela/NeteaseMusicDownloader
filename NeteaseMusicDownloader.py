@@ -139,11 +139,3 @@ class NeteaseMusicDownloader(object):
         socket.setdefaulttimeout(600)
         urllib.request.urlretrieve(musicUrl, savepath, callback)
         return savepath
-
-a=NeteaseMusicDownloader()
-print(a.getSongInfo(298317))
-#print(a.getUrl_backup(26594185))
-#print(a.search('bwv 1006'))
-#print(a.search("周杰伦"))
-print(a.getLyric(298317))
-print(a.download(298317))
